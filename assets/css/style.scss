@@ -43,9 +43,12 @@ nav{
         position: absolute;
         z-index: -1;
         left: 0;
+        transform: translateY(-100%);
+        transition: .6s;
     }
+
     li{
-        display: none;
+        // display: none;
         padding: 0 1em;
         margin: auto 0;
         background: $bg;
@@ -66,16 +69,28 @@ nav{
     label.navbar-toggler{
         display: none;
         height: min-content;
-        padding: 1.5em 0;
+        margin: 1.7em 0;
         cursor: pointer;
     }
 
     label.navbar-toggler span.bar{
-        width: 35px;
+        width: 32px;
         height: 4px;
         margin-bottom: 7px;
         background: $black;
-        border-radius: 10%;
+        border-radius: 20%;
         transition: .4s;
     }
+}
+
+input{
+    display: none;
+}
+
+// input:checked ~ nav ul.nav-li{
+//     transform: translateY(0);
+// }
+
+.nav-li.open{
+    transform: translateY(0);
 }
