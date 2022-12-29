@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  display: flex;
+  padding: 0 1em;
+  justify-content: space-between;
+  position: fixed;
+  line-height: 72px;
+  width: 100%;
+  background: rgba(197, 197, 197, 0.2);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+}
+nav ul.nav-li {
+  width: 100%;
+  padding-top: 5em;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+}
+nav li {
+  display: none;
+  padding: 0 1em;
+  margin: auto 0;
+  background: #f8f9fa;
+  list-style: none;
+}
+nav li a {
+  text-align: center;
+  color: #212529;
+  text-decoration: none;
+}
+nav label.navbar-toggler {
+  display: grid !important;
+}
+nav label.navbar-toggler {
+  display: none;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+  padding: 1.5em 0;
+  cursor: pointer;
+}
+nav label.navbar-toggler span.bar {
+  width: 35px;
+  height: 4px;
+  margin-bottom: 7px;
+  background: #212529;
+  border-radius: 10%;
+  transition: 0.4s;
+}/*# sourceMappingURL=style.css.map */
