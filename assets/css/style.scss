@@ -351,6 +351,7 @@ section.myskills-section{
 
   div.skills-container{
     display: grid;
+    padding-top: 4em;
     grid-template-columns: 1fr 1fr;
     div.skill-box{
         justify-content: center;

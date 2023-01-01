@@ -285,6 +285,7 @@ section.myskills-section div.title-container div.title-desc p {
 }
 section.myskills-section div.skills-container {
   display: grid;
+  padding-top: 4em;
   grid-template-columns: 1fr 1fr;
 }
 section.myskills-section div.skills-container div.skill-box {
