@@ -56,10 +56,25 @@ nav{
         list-style: none;
     }
     li a{
-        
+        font-weight: 400;
         text-align: center;
         color: $black;
         text-decoration: none;
+    }
+
+    li#downloadcv{
+        a{
+            font-weight: 500;
+            border-radius: 6px;
+            padding: .7em;
+            color: #ffffff;
+            background: #5222D0;
+        }
+        a:hover{
+            background: #3e1f8b;
+            transition: .6s;
+        }
+       
     }
 
     li:hover{
@@ -153,15 +168,24 @@ section.hero-section{
             font-weight: 700;
             font-size: 12px;
             letter-spacing: 2px;
-
-            span.arrow svg{
-                margin: 0 auto;
+            transition:  ease-out 0.3s;
+             svg{
+                margin: auto;
                 text-align: center;
                 align-items: center;
-                width: 44px;
-               
+                width: 40px;
+              
             }
         }
+
+        a.view-projects:hover{
+            color: #ffffff;
+            box-shadow: inset 300px 0 0 0 #5222D0;
+            svg{
+                fill: #ffffff;
+            }
+        }
+   
    }
 
    svg.design1{
@@ -214,10 +238,12 @@ section.project-section{
 
   //Project Box
   div.project-container{
-    margin-top: 2em;
+    margin-top: 4em;
     background: #ffffff;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
     border-radius: 7px;
+    max-width: 320px;
+
     div.project-content{
         padding: 1.4em;
         div.categ-title{
@@ -250,6 +276,10 @@ section.project-section{
           
             background: $violet;
             text-decoration: none;
+        }
+        a.btn-visit:hover{
+            background: #371c7a;
+            transition: ease-out .6s;
         }
         a.github{
          margin-left: 2em; 
@@ -301,6 +331,7 @@ section.ido-section{
         border: 4px solid #000000;
         padding: 2em 1em;
         text-align: center;
+        max-width: 320px;
 
         div.logo-container{
             padding: 1em;
@@ -353,6 +384,7 @@ section.myskills-section{
     display: grid;
     padding-top: 4em;
     grid-template-columns: 1fr 1fr;
+    max-width: 320px;
     div.skill-box{
         justify-content: center;
         align-items: center;
@@ -365,6 +397,191 @@ section.myskills-section{
         }
     }
   }
+}
+
+// About Section
+section.about-section{
+    padding: 4em 1em;
+    background: $black;
+        //Title container
+        div.title-container{
+            div.title-head{
+                align-items: center;
+                h1{
+                    color: #ffffff;
+                    font-size: 20px;
+                    span{
+                        border-top: solid 4px $violet;
+                        content: ' ';
+                    }
+                    svg{
+                        padding-top: 7px;
+                        margin-left: 1em;
+                        width: 50px;
+                    }
+                }
+            }
+      }
+      div.profile-container{
+        padding: 2em;
+        img{
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+            width: 60%;
+        }
+      }
+
+      div.about-desc{
+        font-size: 14px;
+        color: #ffffff;
+      }
+}
+
+// About Section
+section.contact-section{
+    padding: 1em 1em;
+    background: $black;
+        //Title container
+        div.title-container{
+            div.title-head{
+                align-items: center;
+                h1{
+                    color: #ffffff;
+                    font-size: 20px;
+                    span{
+                        border-top: solid 4px $violet;
+                        content: ' ';
+                    }
+                    svg{
+                        padding-top: 7px;
+                        margin-left: 1em;
+                        width: 50px;
+                    }
+                }
+            }
+        //Project Descriptions
+        div.title-desc{
+            color: #ffffff;
+            padding-top: 1em;
+            p{
+                font-size: 14px;
+            }
+        }
+      }
+
+      div.contact-form{
+        padding-top: 4em;
+        form{
+            color: #ffffff;
+            
+            label{
+                font-size: 18px;
+                font-weight: bold;
+                display: flex;
+                
+            }
+            input{
+                margin-bottom: 1.6em;
+                border: none;
+                border-radius: 6px;
+                padding: .8em;
+                width: 100%;
+            }
+            textarea{
+                border: none;
+                border-radius: 6px;
+                padding: 1em;
+                height: 200px;
+                width: 100%;
+                margin-bottom: 4em;
+            }
+
+            button{
+                background: $violet;
+                border: none;
+                cursor: pointer;
+                font-size: 20px;
+                letter-spacing: 1px;
+                font-weight: bold;
+                color: #ffffff;
+                width: 100%;
+                padding: 1em;
+                border-radius: 6px;
+                text-align: center;
+                align-items: center;
+                svg{
+                    text-align: center;
+                    align-items: center;
+                    padding-top: 4px;
+                }
+            }
+        }
+      }
+
+      div.social-container{
+        padding-top: 4em;
+        color: #ffffff;
+        align-items: center;
+        font-size: 16px;
+        div.social-logo{
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1em;
+            // span.social-user{
+            //     font-size: 14px;
+            //     align-items: center;
+            //     justify-content: center;
+            //     margin-bottom: 14px;
+            // }
+        }
+      }
+}
+
+// Footer Section
+footer.footer-section{
+    background: #121212;
+    padding: 2em 1em;
+    text-align: center;
+    
+    ul.foot-li{
+        li.nav-item{
+            line-height: 3em;
+            text-decoration: none;
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: #ffffff;
+            }
+        }
+    }
+    div.credits{
+        padding-top: 4em;
+        color: #ffffff;
+    }
+}
+
+
+@media only screen and (min-width: 768px){
+    // Hero Section
+    section.hero-section{
+        div.head-container{
+            div.frontend-title{
+                h1{
+                    font-size: 58px;
+                    text-align: center;
+                    color: $violet;
+                }
+            }
+            div.frontend-desc{
+                p{
+                    font-size: 18px;
+                    text-align: center;
+                }
+            }
+           }
+    }
 }
 
 

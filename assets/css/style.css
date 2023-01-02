@@ -40,9 +40,21 @@ nav li {
   list-style: none;
 }
 nav li a {
+  font-weight: 400;
   text-align: center;
   color: #212529;
   text-decoration: none;
+}
+nav li#downloadcv a {
+  font-weight: 500;
+  border-radius: 6px;
+  padding: 0.7em;
+  color: #ffffff;
+  background: #5222D0;
+}
+nav li#downloadcv a:hover {
+  background: #3e1f8b;
+  transition: 0.6s;
 }
 nav li:hover {
   background: #EC615b;
@@ -119,12 +131,20 @@ section.hero-section div.view-container a.view-projects {
   font-weight: 700;
   font-size: 12px;
   letter-spacing: 2px;
+  transition: ease-out 0.3s;
 }
-section.hero-section div.view-container a.view-projects span.arrow svg {
-  margin: 0 auto;
+section.hero-section div.view-container a.view-projects svg {
+  margin: auto;
   text-align: center;
   align-items: center;
-  width: 44px;
+  width: 40px;
+}
+section.hero-section div.view-container a.view-projects:hover {
+  color: #ffffff;
+  box-shadow: inset 300px 0 0 0 #5222D0;
+}
+section.hero-section div.view-container a.view-projects:hover svg {
+  fill: #ffffff;
 }
 section.hero-section svg.design1 {
   z-index: -1;
@@ -167,10 +187,11 @@ section.project-section div.title-container div.title-desc p {
   font-size: 14px;
 }
 section.project-section div.project-container {
-  margin-top: 2em;
+  margin-top: 4em;
   background: #ffffff;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
   border-radius: 7px;
+  max-width: 320px;
 }
 section.project-section div.project-container div.project-content {
   padding: 1.4em;
@@ -202,6 +223,10 @@ section.project-section div.project-container div.link-container a.btn-visit {
   border-radius: 6px;
   background: #5222D0;
   text-decoration: none;
+}
+section.project-section div.project-container div.link-container a.btn-visit:hover {
+  background: #371c7a;
+  transition: ease-out 0.6s;
 }
 section.project-section div.project-container div.link-container a.github {
   margin-left: 2em;
@@ -243,6 +268,7 @@ section.ido-section div.build-container {
   border: 4px solid #000000;
   padding: 2em 1em;
   text-align: center;
+  max-width: 320px;
 }
 section.ido-section div.build-container div.logo-container {
   padding: 1em;
@@ -287,6 +313,7 @@ section.myskills-section div.skills-container {
   display: grid;
   padding-top: 4em;
   grid-template-columns: 1fr 1fr;
+  max-width: 320px;
 }
 section.myskills-section div.skills-container div.skill-box {
   justify-content: center;
@@ -300,6 +327,155 @@ section.myskills-section div.skills-container div.skill-box h1 {
   font-size: 20px;
 }
 
+section.about-section {
+  padding: 4em 1em;
+  background: #212529;
+}
+section.about-section div.title-container div.title-head {
+  align-items: center;
+}
+section.about-section div.title-container div.title-head h1 {
+  color: #ffffff;
+  font-size: 20px;
+}
+section.about-section div.title-container div.title-head h1 span {
+  border-top: solid 4px #5222D0;
+  content: " ";
+}
+section.about-section div.title-container div.title-head h1 svg {
+  padding-top: 7px;
+  margin-left: 1em;
+  width: 50px;
+}
+section.about-section div.profile-container {
+  padding: 2em;
+}
+section.about-section div.profile-container img {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+section.about-section div.about-desc {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+section.contact-section {
+  padding: 1em 1em;
+  background: #212529;
+}
+section.contact-section div.title-container div.title-head {
+  align-items: center;
+}
+section.contact-section div.title-container div.title-head h1 {
+  color: #ffffff;
+  font-size: 20px;
+}
+section.contact-section div.title-container div.title-head h1 span {
+  border-top: solid 4px #5222D0;
+  content: " ";
+}
+section.contact-section div.title-container div.title-head h1 svg {
+  padding-top: 7px;
+  margin-left: 1em;
+  width: 50px;
+}
+section.contact-section div.title-container div.title-desc {
+  color: #ffffff;
+  padding-top: 1em;
+}
+section.contact-section div.title-container div.title-desc p {
+  font-size: 14px;
+}
+section.contact-section div.contact-form {
+  padding-top: 4em;
+}
+section.contact-section div.contact-form form {
+  color: #ffffff;
+}
+section.contact-section div.contact-form form label {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+}
+section.contact-section div.contact-form form input {
+  margin-bottom: 1.6em;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8em;
+  width: 100%;
+}
+section.contact-section div.contact-form form textarea {
+  border: none;
+  border-radius: 6px;
+  padding: 1em;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 4em;
+}
+section.contact-section div.contact-form form button {
+  background: #5222D0;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #ffffff;
+  width: 100%;
+  padding: 1em;
+  border-radius: 6px;
+  text-align: center;
+  align-items: center;
+}
+section.contact-section div.contact-form form button svg {
+  text-align: center;
+  align-items: center;
+  padding-top: 4px;
+}
+section.contact-section div.social-container {
+  padding-top: 4em;
+  color: #ffffff;
+  align-items: center;
+  font-size: 16px;
+}
+section.contact-section div.social-container div.social-logo {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+footer.footer-section {
+  background: #121212;
+  padding: 2em 1em;
+  text-align: center;
+}
+footer.footer-section ul.foot-li li.nav-item {
+  line-height: 3em;
+  text-decoration: none;
+  list-style: none;
+}
+footer.footer-section ul.foot-li li.nav-item a {
+  text-decoration: none;
+  color: #ffffff;
+}
+footer.footer-section div.credits {
+  padding-top: 4em;
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 768px) {
+  section.hero-section div.head-container div.frontend-title h1 {
+    font-size: 58px;
+    text-align: center;
+    color: #5222D0;
+  }
+  section.hero-section div.head-container div.frontend-desc p {
+    font-size: 18px;
+    text-align: center;
+  }
+}
 @media only screen and (min-width: 866px) {
   nav ul.nav-li {
     transform: none;
