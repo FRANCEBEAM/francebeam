@@ -11,7 +11,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #f8f9fa;
+  background: #ffffff;
 }
 
 nav {
@@ -101,7 +101,6 @@ nav .navbar-toggler.active .bar:nth-child(3) {
 
 section.hero-section {
   padding: 9em 1em;
-  background: #ffffff;
   box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.25);
 }
 section.hero-section div.head-container div.frontend-title h1 {
@@ -154,10 +153,10 @@ section.hero-section svg.design1 {
 }
 section.hero-section svg.design2 {
   z-index: -1;
-  width: 20px;
   position: absolute;
+  width: 20px;
   top: 7em;
-  margin-right: 1em;
+  margin-right: 2em;
   right: 0;
 }
 
@@ -188,10 +187,9 @@ section.project-section div.title-container div.title-desc p {
 }
 section.project-section div.project-container {
   margin-top: 4em;
-  background: #ffffff;
+  background: #f8f9fa;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
   border-radius: 7px;
-  max-width: 320px;
 }
 section.project-section div.project-container div.project-content {
   padding: 1.4em;
@@ -268,7 +266,6 @@ section.ido-section div.build-container {
   border: 4px solid #000000;
   padding: 2em 1em;
   text-align: center;
-  max-width: 320px;
 }
 section.ido-section div.build-container div.logo-container {
   padding: 1em;
@@ -277,7 +274,7 @@ section.ido-section div.build-container div.logo-container img {
   width: 50px;
 }
 section.ido-section div.build-container div.logo-container h1 {
-  margin: 1em 0 1em 0;
+  margin: 1.4em 0 1.4em 0;
   font-size: 22px;
   color: #5222D0;
 }
@@ -313,7 +310,6 @@ section.myskills-section div.skills-container {
   display: grid;
   padding-top: 4em;
   grid-template-columns: 1fr 1fr;
-  max-width: 320px;
 }
 section.myskills-section div.skills-container div.skill-box {
   justify-content: center;
@@ -401,13 +397,16 @@ section.contact-section div.contact-form form label {
   display: flex;
 }
 section.contact-section div.contact-form form input {
+  font-family: "Poppins", sans-serif;
   margin-bottom: 1.6em;
   border: none;
   border-radius: 6px;
   padding: 0.8em;
   width: 100%;
+  resize: none;
 }
 section.contact-section div.contact-form form textarea {
+  font-family: "Poppins", sans-serif;
   border: none;
   border-radius: 6px;
   padding: 1em;
@@ -465,15 +464,199 @@ footer.footer-section div.credits {
   color: #ffffff;
 }
 
+@media only screen and (min-width: 458px) {
+  section.hero-section div.head-container div.frontend-title h1 {
+    font-size: 52px;
+  }
+  section.hero-section div.head-container div.frontend-desc p {
+    font-size: 15px;
+  }
+  section.project-section div.title-container div.title-head h1 {
+    font-size: 22px;
+  }
+  section.project-section div.title-container div.title-desc {
+    padding-top: 1em;
+  }
+  section.project-section div.title-container div.title-desc p {
+    font-size: 15px;
+  }
+  section.project-section div.project-container div.project-content div.categ-title h4 {
+    font-size: 16px;
+  }
+  section.project-section div.project-container div.project-content div.categ-title h1 {
+    font-size: 18px;
+  }
+  section.project-section div.project-container div.project-content div.project-desc p {
+    font-size: 16px;
+  }
+  section.ido-section div.title-container div.title-head h1 {
+    font-size: 22px;
+  }
+  section.ido-section div.title-container div.title-desc {
+    padding-top: 1em;
+  }
+  section.ido-section div.title-container div.title-desc p {
+    font-size: 15px;
+  }
+  section.ido-section div.build-container div.logo-container h1 {
+    font-size: 22px;
+  }
+  section.ido-section div.build-container div.build-desc p {
+    font-size: 15px;
+  }
+  section.myskills-section div.title-container div.title-head h1 {
+    font-size: 22px;
+  }
+  section.myskills-section div.title-container div.title-desc {
+    padding-top: 1em;
+  }
+  section.myskills-section div.title-container div.title-desc p {
+    font-size: 15px;
+  }
+  section.about-section div.title-container div.title-head h1 {
+    font-size: 22px;
+  }
+  section.about-section div.about-desc {
+    font-size: 15px;
+    color: #ffffff;
+  }
+  section.contact-section div.title-container div.title-head h1 {
+    font-size: 22px;
+  }
+  section.contact-section div.title-container div.title-desc p {
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 500px) {
+  section.project-section div.project-outer {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+}
 @media only screen and (min-width: 768px) {
   section.hero-section div.head-container div.frontend-title h1 {
-    font-size: 58px;
+    font-size: 52px;
     text-align: center;
     color: #5222D0;
   }
   section.hero-section div.head-container div.frontend-desc p {
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
+  }
+  section.hero-section div.view-container a.view-projects {
+    font-size: 14px;
+  }
+  section.project-section div.title-container div.title-head h1 {
+    font-size: 24px;
+  }
+  section.project-section div.project-container div.project-content div.categ-title h4 {
+    font-size: 17px;
+  }
+  section.project-section div.project-container div.project-content div.categ-title h1 {
+    font-size: 20px;
+  }
+  section.project-section div.project-container div.project-content div.project-desc p {
+    font-size: 16px;
+  }
+  section.project-section div.project-container div.link-container a.btn-visit {
+    padding: 0.7em 2em;
+  }
+  section.ido-section div.title-container div.title-head h1 {
+    font-size: 24px;
+  }
+  section.ido-section div.title-container div.title-head h1 svg {
+    margin-left: 0.9em;
+  }
+  section.ido-section div.title-container div.title-desc p {
+    font-size: 16px;
+  }
+  section.ido-section div.build-outer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  section.ido-section div.build-outer div.build-container {
+    width: 80%;
+    margin: 2.7em auto;
+  }
+  section.ido-section div.build-outer div.build-container div.logo-container img {
+    width: 50px;
+  }
+  section.ido-section div.build-outer div.build-container div.logo-container h1 {
+    font-size: 20px;
+  }
+  section.ido-section div.build-outer div.build-container div.build-desc p {
+    font-size: 14px;
+  }
+  section.myskills-section div.title-container div.title-head h1 {
+    font-size: 24px;
+  }
+  section.myskills-section div.title-container div.title-desc {
+    padding-top: 1em;
+  }
+  section.myskills-section div.title-container div.title-desc p {
+    font-size: 16px;
+  }
+  section.myskills-section div.skills-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  section.about-section div.title-container div.title-head h1 {
+    font-size: 24px;
+  }
+  section.about-section div.profile-outer {
+    padding-top: 4em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "desc prof";
+  }
+  section.about-section div.profile-outer div.profile-container {
+    padding: 0;
+    grid-area: prof;
+  }
+  section.about-section div.profile-outer div.profile-container img {
+    width: 260px;
+    margin-right: 0;
+  }
+  section.about-section div.profile-outer div.about-desc {
+    grid-area: desc;
+    font-size: 15px;
+  }
+  section.contact-section {
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+  section.contact-section div.title-container div.title-head h1 {
+    font-size: 24px;
+  }
+  section.contact-section div.title-container div.title-desc p {
+    font-size: 16px;
+  }
+  section.contact-section div.contact-outer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+  }
+  section.contact-section div.contact-outer div.social-container {
+    margin-top: 1em;
+  }
+  section.contact-section div.contact-outer div.social-container div.social-logo {
+    font-size: 16px;
+    right: 0;
+  }
+  footer.footer-section {
+    padding: 4em 1em;
+  }
+  footer.footer-section ul {
+    display: flex;
+    justify-content: center;
+    gap: 2.7em;
+  }
+  footer.footer-section ul li {
+    text-align: center;
+    align-items: center;
   }
 }
 @media only screen and (min-width: 866px) {
@@ -493,5 +676,150 @@ footer.footer-section div.credits {
   }
   nav li:hover a {
     color: #EC615b;
+  }
+}
+@media only screen and (min-width: 978px) {
+  section.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  section.hero-section div.left-content div.frontend-title h1 {
+    font-size: 64px;
+    text-align: left;
+  }
+  section.hero-section div.left-content div.frontend-desc p {
+    text-align: left;
+  }
+  section.hero-section div.view-container a.view-projects {
+    margin: 0;
+    left: 0;
+    padding: 1.4em;
+  }
+  section.hero-section svg.design1 {
+    width: 28px;
+    margin-top: 28em;
+  }
+  section.hero-section svg.design2 {
+    width: 16px;
+    left: 0;
+    margin-left: 24em;
+  }
+  div.right-content {
+    background-image: url(/assets/img/devimg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+  section.project-section div.title-container div.title-head {
+    align-items: center;
+  }
+  section.project-section div.title-container div.title-head h1 {
+    font-size: 26px;
+  }
+  section.project-section div.title-container div.title-head h1 svg {
+    padding-top: 7px;
+    margin-left: 1em;
+    width: 50px;
+  }
+  section.project-section div.title-container div.title-desc {
+    width: 562px;
+  }
+  section.project-section div.title-container div.title-desc p {
+    font-size: 17px;
+  }
+  section.project-section div.project-outer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  section.ido-section div.title-container div.title-head {
+    align-items: center;
+  }
+  section.ido-section div.title-container div.title-head h1 {
+    font-size: 26px;
+  }
+  section.ido-section div.title-container div.title-head h1 svg {
+    padding-top: 7px;
+    margin-left: 1em;
+    width: 50px;
+  }
+  section.ido-section div.title-container div.title-desc {
+    width: 562px;
+  }
+  section.ido-section div.title-container div.title-desc p {
+    font-size: 17px;
+  }
+  section.ido-section div.build-outer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  section.myskills-section div.title-container div.title-head {
+    align-items: center;
+  }
+  section.myskills-section div.title-container div.title-head h1 {
+    font-size: 26px;
+  }
+  section.myskills-section div.title-container div.title-head h1 svg {
+    padding-top: 7px;
+    margin-left: 1em;
+    width: 50px;
+  }
+  section.myskills-section div.title-container div.title-desc {
+    width: 562px;
+  }
+  section.myskills-section div.title-container div.title-desc p {
+    font-size: 17px;
+  }
+  section.myskills-section div.skills-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  nav.nav {
+    padding: 0 6em;
+  }
+  nav.nav a.logo h1 {
+    font-size: 32px;
+  }
+  nav.nav ul.nav-li {
+    padding: 0 6em;
+  }
+  nav.nav ul.nav-li li {
+    font-size: 18px;
+  }
+  section.hero-section {
+    padding: 9em 6em;
+    grid-template-columns: 1fr 1.4fr;
+  }
+  section.hero-section div.left-content div.head-container div.frontend-title h1 {
+    font-size: 72px;
+  }
+  section.hero-section div.left-content div.head-container div.frontend-desc p {
+    font-size: 20px;
+  }
+  section.hero-section div.left-content div.view-container a.view-projects {
+    font-size: 16px;
+    padding: 1.7em 2em;
+  }
+  section.hero-section div.right-content {
+    background-size: cover;
+  }
+  section.hero-section svg.design2 {
+    margin-left: 28em;
+  }
+  section.hero-section svg.design1 {
+    margin-top: 34em;
+  }
+  section.project-section {
+    padding: 5em 6em;
+  }
+  section.ido-section {
+    padding: 5em 6em;
+  }
+  section.myskills-section {
+    padding: 5em 6em;
+  }
+  section.about-section {
+    padding: 5em 6em;
+  }
+  section.contact-section {
+    padding: 5em 6em;
   }
 }/*# sourceMappingURL=style.css.map */
