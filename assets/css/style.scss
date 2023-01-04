@@ -40,6 +40,10 @@ nav{
     // background: rgba(197, 197, 197, 0.2);
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
     
+    a.logo{
+        text-decoration: none;
+        color: $black;
+    }
     ul.nav-li{
         width: 100%;
         padding-top: 4em;
@@ -204,6 +208,10 @@ section.hero-section{
     margin-right: 2em;
     right: 0;
  }
+
+ svg.design3{
+    display: none;
+}
 }
 
 //Project Section
@@ -1058,11 +1066,6 @@ footer.footer-section{
                 align-items: center;
                 h1{
                     font-size: 26px;
-                    svg{
-                        padding-top: 7px;
-                        margin-left: 1em;
-                        width: 50px;
-                    }
                 }
             }
         //Project Descriptions
@@ -1077,6 +1080,13 @@ footer.footer-section{
 
         div.build-outer{
             grid-template-columns: 1fr 1fr 1fr;
+            div.build-container{
+                div.logo-container{
+                    h1{
+                        font-size: 17px;
+                    }
+                }
+            }
             
         }
     }
@@ -1087,7 +1097,7 @@ footer.footer-section{
             div.title-head{
                 align-items: center;
                 h1{
-                    font-size: 26px;
+                    font-size: 21px;
                     svg{
                         padding-top: 7px;
                         margin-left: 1em;
@@ -1132,19 +1142,20 @@ footer.footer-section{
 
     //Hero Section
     section.hero-section{
+
         padding: 9em 6em;
         grid-template-columns: 1fr 1.4fr;
         div.left-content{
-           
+           width: 450px;
             div.head-container{
                 div.frontend-title{
                     h1{
-                        font-size: 72px;
+                        font-size: 64px;
                     }
                 }
                 div.frontend-desc{
                     p{
-                        font-size: 20px;
+                        font-size: 18px;
                     }
                 }
             }
@@ -1158,7 +1169,7 @@ footer.footer-section{
         }
 
         div.right-content{
-            background-size: cover;
+            background-size: 50vmin;
         }
 
         svg.design2{
@@ -1168,34 +1179,297 @@ footer.footer-section{
         svg.design1{
             margin-top: 34em;
         }
+
     }
 
     //project section
     section.project-section{
         padding: 5em 6em;
+
+        div.title-container{
+            div.title-head{
+                h1{
+                    font-size: 27px;
+                }
+            }
+        //Project Descriptions
+        div.title-desc{
+            p{
+                font-size: 18px;
+            }
+        }
+      }
+
     }
 
     //What I do section
     section.ido-section{
         padding: 5em 6em;
+
+        div.title-container{
+            div.title-head{
+                h1{
+                    font-size: 27px;
+                }
+            }
+        //Project Descriptions
+        div.title-desc{
+            p{
+                font-size: 18px;
+            }
+        }
+      }
     }
 
     //My skills section
     section.myskills-section{
         padding: 5em 6em;
+
+        div.title-container{
+            div.title-head{
+                h1{
+                    font-size: 27px;
+                }
+            }
+        //Project Descriptions
+        div.title-desc{
+            p{
+                font-size: 18px;
+            }
+        }
+      }
     }
 
     //About me Section
     section.about-section{
         padding: 5em 6em;
+
+        div.title-container{
+            div.title-head{
+                h1{
+                    font-size: 27px;
+                }
+            }
+        }
+
+        
+        div.profile-outer{
+            div.about-desc{
+                font-size: 18px;
+            }
+        }
+
     }
 
     //Contact me Section
     section.contact-section{
         padding: 5em 6em;
-    }
+        
+        div.title-container{
+            div.title-head{
+                h1{
+                    font-size: 27px;
+                }
+            }
+            div.title-desc{
+                p{
+                font-size: 18px;
+                }
+            }
+        }
 
+        div.contact-outer{
+            div.contact-form{
+                form{
+                    label{
+                        font-size: 20px;
+                    }
+                    button{
+                        font-size: 20px;
+                    }
+                }
+            }
+            div.social-container{
+                margin-top: 1em;
+                div.social-logo{
+                    font-size: 18px;
+                }
+             
+            }
+        }
+
+    }
 }
 
+// Laptop View
+
+@media only screen and(min-width: 1366px){
+
+      nav.nav{
+        padding: 1em 12em;
+        a.logo{
+            h1{
+                font-size: 32px;
+            }
+        }
+
+        ul.nav-li{
+            padding: 1em 11em;
+        }
+    }
+
+    //Hero Section
+    section.hero-section{
+        padding: 9em 12em;
+        grid-template-columns: 1fr 1.5fr;
+        svg.design1{
+            margin-top: 37em;
+         }
+
+        svg.design2{
+           margin-left: 36em;
+           margin-top: 3em;
+        }
+
+        svg.design3{
+            margin-top: 5em;
+            display: block;
+            z-index: -1;
+            position: absolute;
+            left: 0; 
+        }
+
+        div.left-content{
+            margin-top: 6em;
+            width: 450px;
+            div.head-container{
+                div.frontend-title{
+                    h1{
+                        font-size: 72px;
+                    }
+                }
+                div.frontend-desc{
+                    p{
+                        font-size: 18px;
+                      
+                    }
+                }
+               }
+        }
+
+        div.right-content{
+            margin-top: 6em;
+            background-size: 620px;
+            
+           
+        }
+    }
+
+    //Project Section
+    section.project-section{
+        padding: 5em 12em;
+    }
+
+    //I do Section
+    section.ido-section{
+        padding: 5em 12em;
+    }
+
+    //I do Section
+    section.myskills-section{
+        padding: 5em 12em;
+    }
+
+    //About me Section
+    section.about-section{
+        padding: 5em 12em;
+    }
+
+    //Contact me Section
+    section.contact-section{
+        padding: 5em 12em;
+    }
+}
+
+@media only screen and (min-width: 1491px){
+
+    // Hero Section
+    section.hero-section{
+       padding-top: 7em;
+       div.left-content{
+        width: 550px;
+        div.head-container{
+            div.frontend-title{
+                h1{
+                    font-size: 80px;
+                }
+                div.frontend-desc{
+                    p{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+       }
+
+        div.right-content{
+            background-size: 52vmin;
+          
+        }
+    }
+
+    //Project Section
+    section.project-section{
+        div.title-container{
+            div.title-head{
+                h1{
+                    font-size: 27px;
+                }
+            }
+    
+        //Project Descriptions
+        div.title-desc{
+                p{
+                    width: 620px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    //What I do Section
+    section.ido-section{
+        div.title-container{
+            div.title-head{
+                h1{
+                    font-size: 27px;
+                }
+            }
+    
+        //Project Descriptions
+        div.title-desc{
+                p{
+                    width: 620px;
+                    font-size: 20px;
+                }
+            }
+        }
+
+        div.build-outer{
+            div.build-container{
+                div.logo-container{
+                    h1{
+                        font-size: 22px;
+                    }
+                }
+                div.build-desc{
+                    p{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 

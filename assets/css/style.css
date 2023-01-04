@@ -24,6 +24,10 @@ nav {
   background: #f8f9fa;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
 }
+nav a.logo {
+  text-decoration: none;
+  color: #212529;
+}
 nav ul.nav-li {
   width: 100%;
   padding-top: 4em;
@@ -158,6 +162,9 @@ section.hero-section svg.design2 {
   top: 7em;
   margin-right: 2em;
   right: 0;
+}
+section.hero-section svg.design3 {
+  display: none;
 }
 
 section.project-section {
@@ -736,11 +743,6 @@ footer.footer-section div.credits {
   section.ido-section div.title-container div.title-head h1 {
     font-size: 26px;
   }
-  section.ido-section div.title-container div.title-head h1 svg {
-    padding-top: 7px;
-    margin-left: 1em;
-    width: 50px;
-  }
   section.ido-section div.title-container div.title-desc {
     width: 562px;
   }
@@ -750,11 +752,14 @@ footer.footer-section div.credits {
   section.ido-section div.build-outer {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  section.ido-section div.build-outer div.build-container div.logo-container h1 {
+    font-size: 17px;
+  }
   section.myskills-section div.title-container div.title-head {
     align-items: center;
   }
   section.myskills-section div.title-container div.title-head h1 {
-    font-size: 26px;
+    font-size: 21px;
   }
   section.myskills-section div.title-container div.title-head h1 svg {
     padding-top: 7px;
@@ -788,18 +793,21 @@ footer.footer-section div.credits {
     padding: 9em 6em;
     grid-template-columns: 1fr 1.4fr;
   }
+  section.hero-section div.left-content {
+    width: 450px;
+  }
   section.hero-section div.left-content div.head-container div.frontend-title h1 {
-    font-size: 72px;
+    font-size: 64px;
   }
   section.hero-section div.left-content div.head-container div.frontend-desc p {
-    font-size: 20px;
+    font-size: 18px;
   }
   section.hero-section div.left-content div.view-container a.view-projects {
     font-size: 16px;
     padding: 1.7em 2em;
   }
   section.hero-section div.right-content {
-    background-size: cover;
+    background-size: 50vmin;
   }
   section.hero-section svg.design2 {
     margin-left: 28em;
@@ -810,16 +818,153 @@ footer.footer-section div.credits {
   section.project-section {
     padding: 5em 6em;
   }
+  section.project-section div.title-container div.title-head h1 {
+    font-size: 27px;
+  }
+  section.project-section div.title-container div.title-desc p {
+    font-size: 18px;
+  }
   section.ido-section {
     padding: 5em 6em;
+  }
+  section.ido-section div.title-container div.title-head h1 {
+    font-size: 27px;
+  }
+  section.ido-section div.title-container div.title-desc p {
+    font-size: 18px;
   }
   section.myskills-section {
     padding: 5em 6em;
   }
+  section.myskills-section div.title-container div.title-head h1 {
+    font-size: 27px;
+  }
+  section.myskills-section div.title-container div.title-desc p {
+    font-size: 18px;
+  }
   section.about-section {
     padding: 5em 6em;
   }
+  section.about-section div.title-container div.title-head h1 {
+    font-size: 27px;
+  }
+  section.about-section div.profile-outer div.about-desc {
+    font-size: 18px;
+  }
   section.contact-section {
     padding: 5em 6em;
+  }
+  section.contact-section div.title-container div.title-head h1 {
+    font-size: 27px;
+  }
+  section.contact-section div.title-container div.title-desc p {
+    font-size: 18px;
+  }
+  section.contact-section div.contact-outer div.contact-form form label {
+    font-size: 20px;
+  }
+  section.contact-section div.contact-outer div.contact-form form button {
+    font-size: 20px;
+  }
+  section.contact-section div.contact-outer div.social-container {
+    margin-top: 1em;
+  }
+  section.contact-section div.contact-outer div.social-container div.social-logo {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1366px) {
+  nav.nav {
+    padding: 1em 12em;
+  }
+  nav.nav a.logo h1 {
+    font-size: 32px;
+  }
+  nav.nav ul.nav-li {
+    padding: 1em 11em;
+  }
+  section.hero-section {
+    padding: 9em 12em;
+    grid-template-columns: 1fr 1.5fr;
+  }
+  section.hero-section svg.design1 {
+    margin-top: 37em;
+  }
+  section.hero-section svg.design2 {
+    margin-left: 36em;
+    margin-top: 3em;
+  }
+  section.hero-section svg.design3 {
+    margin-top: 5em;
+    display: block;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+  }
+  section.hero-section div.left-content {
+    margin-top: 6em;
+    width: 450px;
+  }
+  section.hero-section div.left-content div.head-container div.frontend-title h1 {
+    font-size: 72px;
+  }
+  section.hero-section div.left-content div.head-container div.frontend-desc p {
+    font-size: 18px;
+  }
+  section.hero-section div.right-content {
+    margin-top: 6em;
+    background-size: 620px;
+  }
+  section.project-section {
+    padding: 5em 12em;
+  }
+  section.ido-section {
+    padding: 5em 12em;
+  }
+  section.myskills-section {
+    padding: 5em 12em;
+  }
+  section.about-section {
+    padding: 5em 12em;
+  }
+  section.contact-section {
+    padding: 5em 12em;
+  }
+}
+@media only screen and (min-width: 1491px) {
+  section.hero-section {
+    padding-top: 7em;
+  }
+  section.hero-section div.left-content {
+    width: 550px;
+  }
+  section.hero-section div.left-content div.head-container div.frontend-title h1 {
+    font-size: 80px;
+  }
+  section.hero-section div.left-content div.head-container div.frontend-title div.frontend-desc p {
+    font-size: 18px;
+  }
+  section.hero-section div.right-content {
+    background-size: 52vmin;
+  }
+  section.project-section div.title-container div.title-head h1 {
+    font-size: 27px;
+  }
+  section.project-section div.title-container div.title-desc p {
+    width: 620px;
+    font-size: 20px;
+  }
+  section.ido-section div.title-container div.title-head h1 {
+    font-size: 27px;
+  }
+  section.ido-section div.title-container div.title-desc p {
+    width: 620px;
+    font-size: 20px;
+  }
+  section.ido-section div.build-outer div.build-container div.logo-container h1 {
+    font-size: 22px;
+  }
+  section.ido-section div.build-outer div.build-container div.build-desc p {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=style.css.map */
