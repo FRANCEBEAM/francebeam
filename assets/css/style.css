@@ -11,7 +11,10 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background: #ffffff;
+}
+
+div.nav-wrapper {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 
 nav {
@@ -21,6 +24,7 @@ nav {
   position: fixed;
   line-height: 72px;
   width: 100%;
+  background: #f8f9fa;
 }
 nav a.logo {
   text-decoration: none;
@@ -104,6 +108,10 @@ nav .navbar-toggler.active .bar:nth-child(3) {
   transform: rotate(-45deg);
 }
 
+div.herosec-wrapper {
+  box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.25);
+}
+
 section.hero-section {
   padding: 9em 1em;
 }
@@ -165,6 +173,10 @@ section.hero-section svg.design2 {
 }
 section.hero-section svg.design3 {
   display: none;
+}
+
+div.projectsec-wrapper {
+  box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.25);
 }
 
 section.project-section {
@@ -240,6 +252,10 @@ section.project-section div.project-container div.link-container a.github {
 }
 section.project-section div.project-container div.link-container a.github img {
   width: 30px;
+}
+
+div.buildosec-wrapper {
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
 }
 
 section.ido-section {
@@ -980,15 +996,18 @@ footer.footer-section div.credits {
   }
 }
 @media only screen and (min-width: 1707px) {
-  nav.nav a.logo {
-    padding: 0 5em;
+  div.nav-wrapper {
     margin: 0 auto;
-    width: 1707px;
   }
   nav.nav ul.nav-li {
     width: 1707px;
     padding: 1em 15em;
     margin: 0 auto;
+  }
+  nav.nav a.logo h1 {
+    margin: 0 auto;
+    width: 1707px;
+    padding: 0px 1em;
   }
   section.hero-section {
     padding: 9.4em 15em;

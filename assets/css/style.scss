@@ -22,11 +22,15 @@ $orange: #EC615b;
 
 body{
     font-family: $font;
-    background: $global-bg;
+    // background: $global-bg;
 }
 
 
 //Navbar
+div.nav-wrapper{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
 nav{
     display: flex;
     padding: 0 1em;
@@ -35,7 +39,7 @@ nav{
     // height: 75px;
     line-height: 72px;
     width: 100%;
-    // background: $bg;
+    background: $bg;
     // background: rgba(197, 197, 197, 0.2);
     // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     
@@ -137,6 +141,10 @@ nav{
 
 
 //Hero - section
+
+div.herosec-wrapper{
+    box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.25);
+}
 section.hero-section{
    padding: 9em 1em;
 //    box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.25);
@@ -215,6 +223,10 @@ section.hero-section{
 }
 
 //Project Section
+div.projectsec-wrapper{
+    box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.25); 
+}
+
 section.project-section{
     padding: 4em 1em;
     // box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.25);
@@ -251,7 +263,6 @@ section.project-section{
     background: $bg;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
     border-radius: 7px;
-    // max-width: 320px;
 
     div.project-content{
         padding: 1.4em;
@@ -306,6 +317,10 @@ section.project-section{
 }
 
 // What i do Section
+div.buildosec-wrapper{
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+}
+
 section.ido-section{
     padding: 4em 1em;
     // box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
@@ -1502,28 +1517,30 @@ footer.footer-section{
     //     margin: 0 auto;
     // }
 
-    // head.nav-wrapper{
-    //     padding: 1em 15em;
-    //     margin: 0 auto;
-    //     width: 1707px;
-    // }
+    div.nav-wrapper{
+        // padding: 0 3em;
+        margin: 0 auto;
+        // width: 1707px;
+      
+    }
 
     //NAV
     nav.nav{
-        // padding: 1em 15em;
+       
         // margin: 0 auto;
         // width: 1707px;
-        a.logo{
-                padding: 0 5em;
-                margin: 0 auto;
-                width: 1707px;
-            
-        }
-
         ul.nav-li{
             width: 1707px;
             padding: 1em 15em;
             margin: 0 auto;
+        }
+        a.logo{
+            h1{
+                margin: 0 auto;
+            width: 1707px;
+            padding: 0px 1em;
+            }
+           
         }
     }
 
