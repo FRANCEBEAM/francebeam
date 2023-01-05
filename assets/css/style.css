@@ -21,8 +21,6 @@ nav {
   position: fixed;
   line-height: 72px;
   width: 100%;
-  background: #f8f9fa;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
 }
 nav a.logo {
   text-decoration: none;
@@ -48,6 +46,9 @@ nav li a {
   text-align: center;
   color: #212529;
   text-decoration: none;
+}
+nav li#downloadcv {
+  padding: 0;
 }
 nav li#downloadcv a {
   font-weight: 500;
@@ -105,7 +106,6 @@ nav .navbar-toggler.active .bar:nth-child(3) {
 
 section.hero-section {
   padding: 9em 1em;
-  box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.25);
 }
 section.hero-section div.head-container div.frontend-title h1 {
   font-size: 42px;
@@ -169,7 +169,6 @@ section.hero-section svg.design3 {
 
 section.project-section {
   padding: 4em 1em;
-  box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.25);
 }
 section.project-section div.title-container div.title-head {
   align-items: center;
@@ -245,7 +244,6 @@ section.project-section div.project-container div.link-container a.github img {
 
 section.ido-section {
   padding: 4em 1em;
-  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
 }
 section.ido-section div.title-container div.title-head {
   align-items: center;
@@ -332,6 +330,7 @@ section.myskills-section div.skills-container div.skill-box h1 {
 
 section.about-section {
   padding: 4em 1em;
+  width: 100%;
   background: #212529;
 }
 section.about-section div.title-container div.title-head {
@@ -667,13 +666,25 @@ footer.footer-section div.credits {
   }
 }
 @media only screen and (min-width: 866px) {
+  nav {
+    background: #ffffff;
+  }
   nav ul.nav-li {
+    position: fixed;
     transform: none;
     display: flex;
-    padding: 0;
+    padding: 0 1em;
     top: 0;
-    float: left;
+    float: right;
+    right: 0;
+    margin: 0 auto;
     justify-content: right;
+  }
+  nav ul.nav-li li {
+    padding: 0 1em;
+    margin: auto 0;
+    background: #ffffff;
+    list-style: none;
   }
   nav label.navbar-toggler span {
     display: none;
@@ -881,7 +892,7 @@ footer.footer-section div.credits {
     font-size: 32px;
   }
   nav.nav ul.nav-li {
-    padding: 1em 11em;
+    padding: 1em 12em;
   }
   section.hero-section {
     padding: 9em 12em;
@@ -966,5 +977,53 @@ footer.footer-section div.credits {
   }
   section.ido-section div.build-outer div.build-container div.build-desc p {
     font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1707px) {
+  nav.nav a.logo {
+    padding: 0 5em;
+    margin: 0 auto;
+    width: 1707px;
+  }
+  nav.nav ul.nav-li {
+    width: 1707px;
+    padding: 1em 15em;
+    margin: 0 auto;
+  }
+  section.hero-section {
+    padding: 9.4em 15em;
+    width: 1707px;
+    margin: 0 auto;
+  }
+  section.hero-section div.right-content {
+    background-size: 100%;
+  }
+  section.project-section {
+    padding: 5em 15em;
+    width: 1707px;
+    margin: 0 auto;
+  }
+  section.ido-section {
+    padding: 5em 15em;
+    width: 1707px;
+    margin: 0 auto;
+  }
+  section.myskills-section {
+    padding: 5em 15em;
+    width: 1707px;
+    margin: 0 auto;
+  }
+  div.about-outer {
+    background: #212529;
+  }
+  section.about-section {
+    margin: 0 auto;
+    padding: 5em 15em;
+    width: 1707px;
+  }
+  section.contact-section {
+    padding: 1em 15em;
+    width: 1707px;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=style.css.map */

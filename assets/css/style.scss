@@ -34,11 +34,10 @@ nav{
     position: fixed;
     // height: 75px;
     line-height: 72px;
-
     width: 100%;
-    background: $bg;
+    // background: $bg;
     // background: rgba(197, 197, 197, 0.2);
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     
     a.logo{
         text-decoration: none;
@@ -68,6 +67,7 @@ nav{
     }
 
     li#downloadcv{
+        padding: 0;
         a{
             font-weight: 500;
             border-radius: 6px;
@@ -139,7 +139,7 @@ nav{
 //Hero - section
 section.hero-section{
    padding: 9em 1em;
-   box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.25);
+//    box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.25);
    div.head-container{
     div.frontend-title{
         h1{
@@ -217,7 +217,7 @@ section.hero-section{
 //Project Section
 section.project-section{
     padding: 4em 1em;
-    box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.25);
+    // box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.25);
 
     //Title container
     div.title-container{
@@ -308,7 +308,7 @@ section.project-section{
 // What i do Section
 section.ido-section{
     padding: 4em 1em;
-    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+    // box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
         //Title container
         div.title-container{
             div.title-head{
@@ -411,6 +411,7 @@ section.myskills-section{
 // About Section
 section.about-section{
     padding: 4em 1em;
+    width: 100%;
     background: $black;
         //Title container
         div.title-container{
@@ -957,13 +958,27 @@ footer.footer-section{
 
 @media only screen and (min-width: 866px){
     nav{
+        background: #ffffff;
+
         ul.nav-li{
+            position: fixed;
             transform: none;
             display: flex;
-            padding: 0;
+            padding: 0 1em;
             top: 0;
-            float: left;
+            float: right;
+            right: 0;
+            // line-height: 0;
+            // width: auto;
+            margin: 0 auto;
             justify-content: right;
+
+            li{
+                padding: 0 1em;
+                margin: auto 0;
+                background: #ffffff;
+                list-style: none;
+            }
         }
 
         label.navbar-toggler span{
@@ -1124,6 +1139,7 @@ footer.footer-section{
 @media only screen and (min-width: 1200px){
 
     nav.nav{
+       
         padding: 0 6em;
         a.logo{
             h1{
@@ -1133,9 +1149,16 @@ footer.footer-section{
 
         ul.nav-li{
             padding: 0 6em;
+        //    justify-content: right;
+        //    display: flex;
+        //    right: 0;
+           
             li{
                 font-size: 18px;
             }
+            // li#downloadcv{
+            //    width: 600px;
+            // }
         }
     }
 
@@ -1314,7 +1337,7 @@ footer.footer-section{
         }
 
         ul.nav-li{
-            padding: 1em 11em;
+            padding: 1em 12em;
         }
     }
 
@@ -1470,6 +1493,93 @@ footer.footer-section{
             }
         }
     }
+}
+
+@media only screen and (min-width: 1707px){
+
+    // div.wrapper{
+    //     width: 1707px;
+    //     margin: 0 auto;
+    // }
+
+    // head.nav-wrapper{
+    //     padding: 1em 15em;
+    //     margin: 0 auto;
+    //     width: 1707px;
+    // }
+
+    //NAV
+    nav.nav{
+        // padding: 1em 15em;
+        // margin: 0 auto;
+        // width: 1707px;
+        a.logo{
+                padding: 0 5em;
+                margin: 0 auto;
+                width: 1707px;
+            
+        }
+
+        ul.nav-li{
+            width: 1707px;
+            padding: 1em 15em;
+            margin: 0 auto;
+        }
+    }
+
+    //Hero Section
+    section.hero-section{
+        padding: 9.4em 15em;
+        width: 1707px;
+        margin: 0 auto;
+
+        div.right-content{
+            background-size: 100%;
+        }
+    }
+
+    //Project Section
+    section.project-section{
+        padding: 5em 15em;
+        width: 1707px;
+        margin: 0 auto;
+    }
+
+    //Ido Section
+    section.ido-section{
+        padding: 5em 15em;
+        width: 1707px;
+        margin: 0 auto;
+    }
+
+    //My Skills Section
+    section.myskills-section{
+        padding: 5em 15em;
+        width: 1707px;
+        margin: 0 auto;
+    }
+
+
+    div.about-outer{
+        background: $black;
+    }
+
+    //My Skills Section
+    section.about-section{
+        margin: 0 auto;
+        padding: 5em 15em;
+        width: 1707px;
+  
+    }
+
+    //Contact Section
+    section.contact-section{
+        padding: 1em 15em;
+        width: 1707px;
+        margin: 0 auto;
+        
+    }
+
 }
 
 
