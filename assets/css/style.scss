@@ -27,10 +27,6 @@ body{
 
 
 //Navbar
-div.nav-wrapper{
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-}
-
 nav{
     display: flex;
     padding: 0 1em;
@@ -41,7 +37,7 @@ nav{
     width: 100%;
     background: $bg;
     // background: rgba(197, 197, 197, 0.2);
-    // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     
     a.logo{
         text-decoration: none;
@@ -324,8 +320,23 @@ div.buildosec-wrapper{
 section.ido-section{
     padding: 4em 1em;
     // box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.25);
+    svg.design6{
+        display: none;
+    }
+    
+    svg.design7{
+        display: none;
+    }
+    
         //Title container
         div.title-container{
+            svg.design4{
+                display: none;
+            }
+            svg.design5{
+                display: none;
+            }
+
             div.title-head{
                 align-items: center;
                 h1{
@@ -1215,7 +1226,7 @@ footer.footer-section{
         }
 
         svg.design1{
-            margin-top: 34em;
+            margin-top: 31em;
         }
 
     }
@@ -1238,13 +1249,56 @@ footer.footer-section{
         }
       }
 
+      div.project-outer{
+        padding-top: 3em;
+      }
+
     }
 
     //What I do section
     section.ido-section{
         padding: 5em 6em;
 
+        svg.design6{
+            display: block;
+            width: 100px;
+            position: absolute;
+            z-index: -1;
+            top: 149.4em;
+        }
+
+        svg.design7{
+            display: block;
+            width: 70px;
+            position: absolute;
+            z-index: -1;
+            margin-left: 8em;
+        }
+
+
         div.title-container{
+            svg.design4{
+                display: block;
+                // margin-left: 52em;
+                right: 10em;
+
+                margin: 4em auto;
+                width: 120px;
+                position: absolute;
+                z-index: -1;
+            }
+
+            svg.design5{
+                display: block;
+                // margin-left: 44em;
+                // margin-top: 3em;
+                right: 23em;
+                
+                width: 36px;
+                margin: 7em auto;
+                position: absolute;
+                z-index: -1;
+            }
             div.title-head{
                 h1{
                     font-size: 27px;
@@ -1256,6 +1310,10 @@ footer.footer-section{
                 font-size: 18px;
             }
         }
+      }
+
+      div.build-outer{
+        padding-top: 3em;
       }
     }
 
@@ -1276,6 +1334,9 @@ footer.footer-section{
             }
         }
       }
+      div.skills-container{
+        padding-top: 3em;
+      }
     }
 
     //About me Section
@@ -1292,6 +1353,7 @@ footer.footer-section{
 
         
         div.profile-outer{
+            padding-top: 3em;
             div.about-desc{
                 font-size: 18px;
             }
@@ -1411,6 +1473,22 @@ footer.footer-section{
     //I do Section
     section.ido-section{
         padding: 5em 12em;
+
+        div.title-head{
+            svg.design5{
+                margin-right: 4em;
+                }
+            svg.design4{
+            margin-right: 4em;
+            }
+        }
+
+        svg.design5{
+            margin: 22em auto;
+        }
+        svg.design6{
+            margin: 7em auto;
+        }
     }
 
     //I do Section
@@ -1459,6 +1537,7 @@ footer.footer-section{
     //Project Section
     section.project-section{
         div.title-container{
+ 
             div.title-head{
                 h1{
                     font-size: 27px;
@@ -1477,8 +1556,15 @@ footer.footer-section{
 
     //What I do Section
     section.ido-section{
+        svg.design6{
+            
+            margin:12em auto;
+        }
         div.title-container{
             div.title-head{
+                svg.design4{
+                    margin-right: 4em;
+                 }
                 h1{
                     font-size: 27px;
                 }
@@ -1517,31 +1603,22 @@ footer.footer-section{
     //     margin: 0 auto;
     // }
 
-    div.nav-wrapper{
-        // padding: 0 3em;
-        margin: 0 auto;
-        // width: 1707px;
+    // div.nav-wrapper{
+    //     margin: 0 auto;
+    //     width: 1707px;
       
-    }
+    // }
 
     //NAV
     nav.nav{
-       
-        // margin: 0 auto;
-        // width: 1707px;
+        padding: 1em 15em;
+        margin: 0 auto;
         ul.nav-li{
-            width: 1707px;
             padding: 1em 15em;
             margin: 0 auto;
-        }
-        a.logo{
-            h1{
-                margin: 0 auto;
-            width: 1707px;
-            padding: 0px 1em;
-            }
            
         }
+
     }
 
     //Hero Section
@@ -1549,6 +1626,13 @@ footer.footer-section{
         padding: 9.4em 15em;
         width: 1707px;
         margin: 0 auto;
+        svg.design2{
+            margin-top: 6em;
+            margin-left: 27em;
+            left: unset;
+            right: unset;
+        }
+
 
         div.right-content{
             background-size: 100%;
@@ -1567,6 +1651,23 @@ footer.footer-section{
         padding: 5em 15em;
         width: 1707px;
         margin: 0 auto;
+
+        svg.design6{
+            padding-top: 3em;
+        }
+
+        div.title-container{
+            div.title-head{
+                svg.design5{
+                    right: unset;
+                    margin-left: 58em;
+                }
+                svg.design4{
+                    right: unset;
+                    margin-left: 65em;
+                }
+            }
+        }
     }
 
     //My Skills Section
@@ -1594,7 +1695,7 @@ footer.footer-section{
         padding: 1em 15em;
         width: 1707px;
         margin: 0 auto;
-        
+        padding-bottom: 5em;
     }
 
 }

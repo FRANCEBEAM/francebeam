@@ -13,10 +13,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-div.nav-wrapper {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
-}
-
 nav {
   display: flex;
   padding: 0 1em;
@@ -25,6 +21,7 @@ nav {
   line-height: 72px;
   width: 100%;
   background: #f8f9fa;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 nav a.logo {
   text-decoration: none;
@@ -260,6 +257,18 @@ div.buildosec-wrapper {
 
 section.ido-section {
   padding: 4em 1em;
+}
+section.ido-section svg.design6 {
+  display: none;
+}
+section.ido-section svg.design7 {
+  display: none;
+}
+section.ido-section div.title-container svg.design4 {
+  display: none;
+}
+section.ido-section div.title-container svg.design5 {
+  display: none;
 }
 section.ido-section div.title-container div.title-head {
   align-items: center;
@@ -840,7 +849,7 @@ footer.footer-section div.credits {
     margin-left: 28em;
   }
   section.hero-section svg.design1 {
-    margin-top: 34em;
+    margin-top: 31em;
   }
   section.project-section {
     padding: 5em 6em;
@@ -851,14 +860,50 @@ footer.footer-section div.credits {
   section.project-section div.title-container div.title-desc p {
     font-size: 18px;
   }
+  section.project-section div.project-outer {
+    padding-top: 3em;
+  }
   section.ido-section {
     padding: 5em 6em;
+  }
+  section.ido-section svg.design6 {
+    display: block;
+    width: 100px;
+    position: absolute;
+    z-index: -1;
+    top: 149.4em;
+  }
+  section.ido-section svg.design7 {
+    display: block;
+    width: 70px;
+    position: absolute;
+    z-index: -1;
+    margin-left: 8em;
+  }
+  section.ido-section div.title-container svg.design4 {
+    display: block;
+    right: 10em;
+    margin: 4em auto;
+    width: 120px;
+    position: absolute;
+    z-index: -1;
+  }
+  section.ido-section div.title-container svg.design5 {
+    display: block;
+    right: 23em;
+    width: 36px;
+    margin: 7em auto;
+    position: absolute;
+    z-index: -1;
   }
   section.ido-section div.title-container div.title-head h1 {
     font-size: 27px;
   }
   section.ido-section div.title-container div.title-desc p {
     font-size: 18px;
+  }
+  section.ido-section div.build-outer {
+    padding-top: 3em;
   }
   section.myskills-section {
     padding: 5em 6em;
@@ -869,11 +914,17 @@ footer.footer-section div.credits {
   section.myskills-section div.title-container div.title-desc p {
     font-size: 18px;
   }
+  section.myskills-section div.skills-container {
+    padding-top: 3em;
+  }
   section.about-section {
     padding: 5em 6em;
   }
   section.about-section div.title-container div.title-head h1 {
     font-size: 27px;
+  }
+  section.about-section div.profile-outer {
+    padding-top: 3em;
   }
   section.about-section div.profile-outer div.about-desc {
     font-size: 18px;
@@ -948,6 +999,18 @@ footer.footer-section div.credits {
   section.ido-section {
     padding: 5em 12em;
   }
+  section.ido-section div.title-head svg.design5 {
+    margin-right: 4em;
+  }
+  section.ido-section div.title-head svg.design4 {
+    margin-right: 4em;
+  }
+  section.ido-section svg.design5 {
+    margin: 22em auto;
+  }
+  section.ido-section svg.design6 {
+    margin: 7em auto;
+  }
   section.myskills-section {
     padding: 5em 12em;
   }
@@ -981,6 +1044,12 @@ footer.footer-section div.credits {
     width: 620px;
     font-size: 20px;
   }
+  section.ido-section svg.design6 {
+    margin: 12em auto;
+  }
+  section.ido-section div.title-container div.title-head svg.design4 {
+    margin-right: 4em;
+  }
   section.ido-section div.title-container div.title-head h1 {
     font-size: 27px;
   }
@@ -996,23 +1065,24 @@ footer.footer-section div.credits {
   }
 }
 @media only screen and (min-width: 1707px) {
-  div.nav-wrapper {
-    margin: 0 auto;
-  }
-  nav.nav ul.nav-li {
-    width: 1707px;
+  nav.nav {
     padding: 1em 15em;
     margin: 0 auto;
   }
-  nav.nav a.logo h1 {
+  nav.nav ul.nav-li {
+    padding: 1em 15em;
     margin: 0 auto;
-    width: 1707px;
-    padding: 0px 1em;
   }
   section.hero-section {
     padding: 9.4em 15em;
     width: 1707px;
     margin: 0 auto;
+  }
+  section.hero-section svg.design2 {
+    margin-top: 6em;
+    margin-left: 27em;
+    left: unset;
+    right: unset;
   }
   section.hero-section div.right-content {
     background-size: 100%;
@@ -1026,6 +1096,17 @@ footer.footer-section div.credits {
     padding: 5em 15em;
     width: 1707px;
     margin: 0 auto;
+  }
+  section.ido-section svg.design6 {
+    padding-top: 3em;
+  }
+  section.ido-section div.title-container div.title-head svg.design5 {
+    right: unset;
+    margin-left: 58em;
+  }
+  section.ido-section div.title-container div.title-head svg.design4 {
+    right: unset;
+    margin-left: 65em;
   }
   section.myskills-section {
     padding: 5em 15em;
@@ -1044,5 +1125,6 @@ footer.footer-section div.credits {
     padding: 1em 15em;
     width: 1707px;
     margin: 0 auto;
+    padding-bottom: 5em;
   }
 }/*# sourceMappingURL=style.css.map */
