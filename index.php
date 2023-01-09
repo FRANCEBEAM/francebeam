@@ -521,21 +521,32 @@ data-aos-duration="800">
 
 <div class="contact-outer">
     <div class="contact-form">
-        <form action="">
+    <?php
+    $msg = "";
+        if(isset($_GET['error'])){
+        $msg = "Please Fill the fields";
+        echo '<div>'.$msg.'</div>';
+        }
+        if(isset($_GET['success'])){
+            $msg = "Your message has been sent";
+            echo '<div>'.$msg.'</div>';
+        }
+    ?>
+        <form action="php/mail.php" method="POST">
             <div class="name-container">
                 <label for="name">Name</label>
-                <input type="text">
+                <input type="text" name="name" id="name" required>
             </div>
             <div class="email-container">
                 <label for="name">Email</label>
-                <input type="text">
+                <input type="text" name="email" id="email" required>
             </div>
             <div class="message-container">
                 <label for="name">Message</label>
-                <textarea name="comment" id="" cols="" rows=""></textarea>
+                <textarea name="message" id="message" cols="" rows="" required></textarea>
             </div>
 
-            <button type="button" class="btn-send">SEND <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <button name="btnSend" class="btn-send">SEND <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_310_1920)">
                 <path d="M20.4532 0.136867L0.537166 11.6267C-0.240569 12.0736 -0.141741 13.1564 0.631697 13.483L5.19928 15.3994L17.5442 4.51968C17.7805 4.30913 18.1157 4.6314 17.9137 4.87632L7.56256 17.4876V20.9466C7.56256 21.9607 8.78717 22.3603 9.38873 21.6255L12.1172 18.3041L17.4712 20.547C18.0813 20.8048 18.7774 20.4224 18.8891 19.765L21.9829 1.20249C22.129 0.334523 21.1965 -0.29282 20.4532 0.136867Z" fill="white"/>
                 </g>
@@ -582,13 +593,13 @@ data-aos-duration="800">
 <footer class="footer-section">
 
     <ul class="foot-li">
-        <li class="nav-item"><a href="#">Home</a></li>
-        <li class="nav-item"><a href="#">Projects</a></li>
-        <li class="nav-item"><a href="#">Works</a></li>
-        <li class="nav-item"><a href="#">Skills</a></li>
-        <li class="nav-item"><a href="#">About</a></li>
-        <li class="nav-item"><a href="#">Contact</a></li>
-        <li class="nav-item"><a href="#">Download CV</a></li>
+        <li class="nav-item"><a href="#home">Home</a></li>
+        <li class="nav-item"><a href="#project">Projects</a></li>
+        <li class="nav-item"><a href="#work">Works</a></li>
+        <li class="nav-item"><a href="#skill">Skills</a></li>
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
+        <li class="nav-item" id="downloadcv"><a href="#">Download CV</a></li>
       </ul>
    
     <div class="credits">
