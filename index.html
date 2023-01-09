@@ -7,6 +7,8 @@
     <title>francebeam</title>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="/assets/css/aos.css" rel="stylesheet">
+    <link href="/assets/css/fontawesome.css" rel="stylesheet">
 </head>
 <body>
 <div class="nav-wrapper">
@@ -14,7 +16,7 @@
         <div class="logo-container">
 
        
-        <a class="logo" href="#">
+        <a class="logo" href="#home">
             <h1>francebeam</h1>
         </a>
     </div>
@@ -25,19 +27,19 @@
         </label>
 
       <ul class="nav-li">
-        <li class="nav-item"><a href="#">Home</a></li>
-        <li class="nav-item"><a href="#">Projects</a></li>
-        <li class="nav-item"><a href="#">Works</a></li>
-        <li class="nav-item"><a href="#">Skills</a></li>
-        <li class="nav-item"><a href="#">About</a></li>
-        <li class="nav-item"><a href="#">Contact</a></li>
+        <li class="nav-item"><a href="#home">Home</a></li>
+        <li class="nav-item"><a href="#project">Projects</a></li>
+        <li class="nav-item"><a href="#work">Works</a></li>
+        <li class="nav-item"><a href="#skill">Skills</a></li>
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
         <li class="nav-item" id="downloadcv"><a href="#">Download CV</a></li>
       </ul>
     </nav>
 </div>
 
 <!-- Hero Section -->
-<div class="herosec-wrapper">
+<div class="herosec-wrapper" id="home">
 <section class="hero-section">
     <svg class = "design2" width="23" height="55" viewBox="0 0 23 55" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M21.8625 26.9112V18.8139L17.8139 22.8625L17.0042 13.9556L11.3361 16.3848L11.5386 8.48997L4.65591 9.70455L4.04862 1.00004" stroke="#5222D0" stroke-width="2"/>
@@ -50,21 +52,29 @@
         
 <div class="left-content">
     <div class="head-container">
-        <div class="frontend-title">
-            <h1>Frontend Developer.</h1>
+        <div class="frontend-title" data-aos="fade-right">
+            <h1 data-aos="fade-right"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="800">Frontend Developer.</h1>
         </div>
-        <div class="frontend-desc">
+        <div class="frontend-desc" data-aos="fade-left"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="1200">
             <p>I build amazing website, frontend and web design for quality products with great user experiences and helping to achieve the best design for business. Let's build and work together.</p>
         </div>
     </div>
-<div class="view-container">
+<div class="view-container" data-aos="zoom-in-right"
+data-aos-duration="900">
     <a href="" class="view-projects">VIEW MY PROJECTS <svg width="66" viewBox="0 0 66 16" fill="" xmlns="http://www.w3.org/2000/svg">
         <path d="M65.7071 8.7071C66.0976 8.31658 66.0976 7.68341 65.7071 7.29289L59.3431 0.928927C58.9526 0.538403 58.3195 0.538403 57.9289 0.928927C57.5384 1.31945 57.5384 1.95262 57.9289 2.34314L63.5858 7.99999L57.9289 13.6568C57.5384 14.0474 57.5384 14.6805 57.9289 15.0711C58.3195 15.4616 58.9526 15.4616 59.3431 15.0711L65.7071 8.7071ZM8.74228e-08 9L65 8.99999L65 6.99999L-8.74228e-08 7L8.74228e-08 9Z" fill=""/>
         </svg></a>
 </div>
 </div>
 
-<div class="right-content">
+<div class="right-content" data-aos="fade-left"
+data-aos-anchor="#example-anchor"
+data-aos-offset="500"
+data-aos-duration="500">
 
 </div>
 
@@ -76,12 +86,13 @@
 </div>
 
 <!-- Project Section -->
-<div class="projectsec-wrapper">
+<div class="projectsec-wrapper" id="project">
 <section class="project-section">
     <div class="title-container">
         <div class="title-head">
             <div class="head-head">
-                <h1><span>MY</span> PROJECTS <svg width="85" height="21" viewBox="0 0 85 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <h1 data-aos="fade-up"
+                data-aos-duration="800"><span>MY</span> PROJECTS <svg width="85" height="21" viewBox="0 0 85 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="65" y="1" width="18.5318" height="18.5318" stroke="#5222D0" stroke-width="2"/>
                     <rect x="33" y="1" width="18.5318" height="18.5318" stroke="#5222D0" stroke-width="2"/>
                     <circle cx="10.2659" cy="10.2659" r="9.26589" fill="#5222D0" stroke="#5222D0" stroke-width="2"/>
@@ -91,13 +102,15 @@
             </div>
 
         </div>
-        <div class="title-desc">
+        <div class="title-desc" data-aos="fade-left"
+        data-aos-duration="2000">
             <p>This is all my projects that I build and created before. My various projects are build in different languages, own unique design and approach for creating the websites.</p>
         </div>
     </div>
 
 <!-- Project Box -->
-  <div class="project-outer">
+  <div class="project-outer" data-aos="fade-left"
+  data-aos-duration="2000">
     <div class="project-container">
         <div class="banner-container">
             <img src="/assets/img/banner.jpg" alt="" width="100%">
@@ -165,7 +178,7 @@
 </div>
 
 <!-- What I Do -->
-<div class="buildosec-wrapper">
+<div class="buildosec-wrapper" id="work">
 <section class="ido-section">
     <div class="title-container">
         <div class="title-head">
@@ -249,7 +262,8 @@
                 <circle cx="166.998" cy="134.091" r="2.01473" fill="#5222D0"/>
                 </svg>
             <div class="head-head">
-                <h1><span>WH</span>AT I DO <svg width="85" height="21" viewBox="0 0 85 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <h1 data-aos="fade-up"
+                data-aos-duration="800"><span>WH</span>AT I DO <svg width="85" height="21" viewBox="0 0 85 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="65" y="1" width="18.5318" height="18.5318" stroke="#5222D0" stroke-width="2"/>
                     <rect x="1" y="1" width="18.5318" height="18.5318" stroke="#5222D0" stroke-width="2"/>
                     <circle cx="42.2659" cy="10.2659" r="9.26589" fill="#5222D0" stroke="#5222D0" stroke-width="2"/>
@@ -259,7 +273,8 @@
             </div>
 
         </div>
-        <div class="title-desc">
+        <div class="title-desc" data-aos="fade-left"
+        data-aos-duration="2000">
             <p>Here is I am doing for my self taught development journey and my ability to create a project and as my own good practices.</p>
         </div>
     </div>
@@ -267,7 +282,8 @@
         
 
 <!-- Web Application Build -->
-<div class="build-outer">
+<div class="build-outer" data-aos="fade-up"
+data-aos-duration="800">
     <div class="build-container">
         <div class="logo-container">
             <img src="/assets/img/webapp.svg" alt="">
@@ -388,17 +404,20 @@
 </div>
 
 <!-- My Skills -->
-<section class="myskills-section">
+<div class="skill-wrapper" id="skill">
+<section class="myskills-section" data-aos="fade-up" data-aos-duration="800">
     <div class="title-container">
         <div class="title-head">
-            <h1><span>MY</span> SKILLS <svg width="85" height="21" viewBox="0 0 85 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <h1 data-aos="fade-up"
+            data-aos-duration="800"><span>MY</span> SKILLS <svg width="85" height="21" viewBox="0 0 85 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="1" y="1" width="18.5318" height="18.5318" stroke="#5222D0" stroke-width="2"/>
                 <rect x="33" y="1" width="18.5318" height="18.5318" stroke="#5222D0" stroke-width="2"/>
                 <circle cx="74.2659" cy="10.2659" r="9.26589" fill="#5222D0" stroke="#5222D0" stroke-width="2"/>
                 </svg>
             </h1>
         </div>
-        <div class="title-desc">
+        <div class="title-desc" data-aos="fade-left"
+        data-aos-duration="2000">
             <p>My list of skills that are knowledgably and capable to apply on the project.</p>
         </div>
     </div>
@@ -462,9 +481,10 @@
     </div>
 </div>
 </section>
+</div>
 
 <!-- About me -->
-<div class="about-outer">
+<div class="about-outer" id="about">
 <section class="about-section">
     <div class="title-container">
         <div class="title-head">
@@ -478,13 +498,17 @@
     <div class="about-desc">
         <p>Hi, my name is Francis Beam Santander. I am a self - taught Web Developer and Web Designer. A college student of Bulacan State University based in Philippines and lives in Norzagaray Bulacan.</p>
         <br>
-        <p>I’m here for your side to help and give services that I can do and offer the best that I can do. I know your point of view and that’s why I am here for the people who really need an urgent request for their desire website.</p>
+        
+        <p>I help people to build amazing frontend with little bit of backend for important functionalities and love to design own product for their website so that they can improve and achieve the strategic approach for their business.</p>
+        <br>
+
+        <p>I am looking forward to give services that I can do and apply my skills for the project.</p>
     </div>
   </div>
 </section>
 
 <!-- Contact me -->
-<section class="contact-section">
+<section class="contact-section" id="contact">
   <div class="contact-wrapper">
     <div class="title-container">
         <div class="title-head">
@@ -547,7 +571,7 @@
         <!-- Linkin -->
         <div class="social-logo">
             <i class="fa-brands fa-linkedin"></i>                       
-               09076410794
+               francisbeamilinked
         </div>
     </div>
 </div>
@@ -574,6 +598,9 @@
 
 
 <script src="/assets/js/app.js"></script>
-
+<script src="/assets/js/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
