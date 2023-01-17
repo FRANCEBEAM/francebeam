@@ -68,7 +68,7 @@ nav{
     }
 
     li#downloadcv{
-        padding: 0;
+        padding: 0 1em;
         a{
             font-weight: 500;
             border-radius: 6px;
@@ -556,6 +556,10 @@ section.contact-section{
                     align-items: center;
                     padding-top: 4px;
                 }
+            }
+            button.btn-send:hover{
+                background: #3e1f8b;
+                transition: .6s;
             }
         }
       }
@@ -1053,7 +1057,7 @@ footer.footer-section{
 
         svg.design1{
             width: 28px;
-            margin-top: 28em;
+            // margin-top: 28em;
         }
 
         svg.design2{
@@ -1226,7 +1230,7 @@ footer.footer-section{
         }
 
         svg.design1{
-            margin-top: 31em;
+            margin-top: 2em;
         }
 
     }
@@ -1423,7 +1427,7 @@ footer.footer-section{
         padding: 9em 12em;
         grid-template-columns: 1fr 1.5fr;
         svg.design1{
-            margin-top: 37em;
+            margin-top: 3em;
          }
 
         svg.design2{

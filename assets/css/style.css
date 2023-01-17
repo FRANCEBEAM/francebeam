@@ -50,7 +50,7 @@ nav li a {
   text-decoration: none;
 }
 nav li#downloadcv {
-  padding: 0;
+  padding: 0 1em;
 }
 nav li#downloadcv a {
   font-weight: 500;
@@ -464,6 +464,10 @@ section.contact-section div.contact-form form button svg {
   align-items: center;
   padding-top: 4px;
 }
+section.contact-section div.contact-form form button.btn-send:hover {
+  background: #3e1f8b;
+  transition: 0.6s;
+}
 section.contact-section div.social-container {
   padding-top: 4em;
   color: #ffffff;
@@ -740,7 +744,6 @@ footer.footer-section div.credits {
   }
   section.hero-section svg.design1 {
     width: 28px;
-    margin-top: 28em;
   }
   section.hero-section svg.design2 {
     width: 16px;
@@ -853,7 +856,7 @@ footer.footer-section div.credits {
     margin-left: 28em;
   }
   section.hero-section svg.design1 {
-    margin-top: 31em;
+    margin-top: 2em;
   }
   section.project-section {
     padding: 6em 6em;
@@ -970,7 +973,7 @@ footer.footer-section div.credits {
     grid-template-columns: 1fr 1.5fr;
   }
   section.hero-section svg.design1 {
-    margin-top: 37em;
+    margin-top: 3em;
   }
   section.hero-section svg.design2 {
     margin-left: 36em;

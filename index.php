@@ -12,14 +12,12 @@
 </head>
 <body>
 <div class="nav-wrapper">
-    <nav class="nav">
+<nav class="nav">
         <div class="logo-container">
-
-       
-        <a class="logo" href="#home">
-            <h1>francebeam</h1>
-        </a>
-    </div>
+            <a class="logo" href="#home">
+                <h1>francebeam</h1>
+            </a>
+        </div>
         <label for="toggle" class="navbar-toggler">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -33,7 +31,7 @@
         <li class="nav-item"><a href="#skill">Skills</a></li>
         <li class="nav-item"><a href="#about">About</a></li>
         <li class="nav-item"><a href="#contact">Contact</a></li>
-        <li class="nav-item" id="downloadcv"><a href="#">Download CV</a></li>
+        <li class="nav-item" id="downloadcv"><a href="/php/download.php?file=Francis-Beam-F.-Santander-Resume.pdf">Resume</a></li>
       </ul>
     </nav>
 </div>
@@ -54,34 +52,30 @@
     <div class="head-container">
         <div class="frontend-title" data-aos="fade-right">
             <h1 data-aos="fade-right"
-            data-aos-easing="ease-in-sine"
             data-aos-duration="800">Frontend Developer.</h1>
         </div>
-        <div class="frontend-desc" data-aos="fade-left"
-        data-aos-easing="ease-in-sine"
-        data-aos-duration="1200">
-            <p>I build amazing website, frontend and web design for quality products with great user experiences and helping to achieve the best design for business. Let's build and work together.</p>
+        <div class="frontend-desc">
+            <p data-aos="fade-right">I build amazing website, frontend and web design for quality products with great user experiences and helping to achieve the best design for business. Let's build and work together.</p>
         </div>
     </div>
-<div class="view-container" data-aos="zoom-in-right"
-data-aos-duration="900">
-    <a href="" class="view-projects">VIEW MY PROJECTS <svg width="66" viewBox="0 0 66 16" fill="" xmlns="http://www.w3.org/2000/svg">
+<div class="view-container">
+    <a href="" class="view-projects" data-aos="zoom-in" data-aos-duration="3000">VIEW MY PROJECTS <svg width="66" viewBox="0 0 66 16" fill="" xmlns="http://www.w3.org/2000/svg">
         <path d="M65.7071 8.7071C66.0976 8.31658 66.0976 7.68341 65.7071 7.29289L59.3431 0.928927C58.9526 0.538403 58.3195 0.538403 57.9289 0.928927C57.5384 1.31945 57.5384 1.95262 57.9289 2.34314L63.5858 7.99999L57.9289 13.6568C57.5384 14.0474 57.5384 14.6805 57.9289 15.0711C58.3195 15.4616 58.9526 15.4616 59.3431 15.0711L65.7071 8.7071ZM8.74228e-08 9L65 8.99999L65 6.99999L-8.74228e-08 7L8.74228e-08 9Z" fill=""/>
         </svg></a>
 </div>
-</div>
-
-<div class="right-content" data-aos="fade-left"
-data-aos-anchor="#example-anchor"
-data-aos-offset="500"
-data-aos-duration="500">
-
-</div>
-
-
-    <svg class="design1" width="41" height="53" viewBox="0 0 41 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg class="design1" width="41" height="53" viewBox="0 0 41 53" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M2.19751 7.80943C-0.661361 15.6004 7.14834 19.5304 12.5983 20.5062C16.7791 21.249 19.8664 22.8599 21.7553 27.6574C22.4641 29.8726 23.2884 32.046 24.2233 34.1648C25.0289 35.7563 26.1419 37.1279 27.4654 38.1598C29.579 39.7441 36.1605 39.9874 36.2644 43.9753C36.2943 44.5132 36.5038 45.0346 36.8482 45.428C37.1926 45.8213 37.6446 46.0556 38.1079 46.081C38.5712 46.1064 39.0092 45.9208 39.3282 45.5638C39.6473 45.2068 39.8223 44.7065 39.8159 44.1698C39.8125 42.5897 39.3564 41.0102 38.519 39.6781C37.6816 38.346 36.51 37.3366 35.1875 36.8075C33.2171 35.758 30.8661 35.9586 29.0413 34.5824C26.1855 32.4802 25.7148 28.0196 24.403 24.9306C23.334 21.9924 21.4264 19.5042 19.0233 17.9134C16.3107 16.3458 2.99369 16.188 5.27661 9.84133C6.23964 7.57647 3.12198 5.40065 2.19489 7.79967L2.19751 7.80943Z" fill="#5222D0"/>
         </svg>
+</div>
+
+<div class="right-content" data-aos="fade-left"></div>
+
+</div>
+
+
+    <!-- <svg class="design1" width="41" height="53" viewBox="0 0 41 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2.19751 7.80943C-0.661361 15.6004 7.14834 19.5304 12.5983 20.5062C16.7791 21.249 19.8664 22.8599 21.7553 27.6574C22.4641 29.8726 23.2884 32.046 24.2233 34.1648C25.0289 35.7563 26.1419 37.1279 27.4654 38.1598C29.579 39.7441 36.1605 39.9874 36.2644 43.9753C36.2943 44.5132 36.5038 45.0346 36.8482 45.428C37.1926 45.8213 37.6446 46.0556 38.1079 46.081C38.5712 46.1064 39.0092 45.9208 39.3282 45.5638C39.6473 45.2068 39.8223 44.7065 39.8159 44.1698C39.8125 42.5897 39.3564 41.0102 38.519 39.6781C37.6816 38.346 36.51 37.3366 35.1875 36.8075C33.2171 35.758 30.8661 35.9586 29.0413 34.5824C26.1855 32.4802 25.7148 28.0196 24.403 24.9306C23.334 21.9924 21.4264 19.5042 19.0233 17.9134C16.3107 16.3458 2.99369 16.188 5.27661 9.84133C6.23964 7.57647 3.12198 5.40065 2.19489 7.79967L2.19751 7.80943Z" fill="#5222D0"/>
+        </svg> -->
 </section>
 </div>
 
@@ -102,15 +96,13 @@ data-aos-duration="500">
             </div>
 
         </div>
-        <div class="title-desc" data-aos="fade-left"
-        data-aos-duration="2000">
-            <p>This is all my projects that I build and created before. My various projects are build in different languages, own unique design and approach for creating the websites.</p>
+        <div class="title-desc">
+            <p data-aos="fade-right">This is all my projects that I build and created before. My various projects are build in different languages, own unique design and approach for creating the websites.</p>
         </div>
     </div>
 
 <!-- Project Box -->
-  <div class="project-outer" data-aos="fade-left"
-  data-aos-duration="2000">
+  <div class="project-outer">
     <div class="project-container">
         <div class="banner-container">
             <img src="/assets/img/banner.jpg" alt="" width="100%">
@@ -273,9 +265,8 @@ data-aos-duration="500">
             </div>
 
         </div>
-        <div class="title-desc" data-aos="fade-left"
-        data-aos-duration="2000">
-            <p>Here is I am doing for my self taught development journey and my ability to create a project and as my own good practices.</p>
+        <div class="title-desc">
+            <p data-aos="fade-right">Here is I am doing for my self taught development journey and my ability to create a project and as my own good practices.</p>
         </div>
     </div>
 
@@ -416,9 +407,8 @@ data-aos-duration="800">
                 </svg>
             </h1>
         </div>
-        <div class="title-desc" data-aos="fade-left"
-        data-aos-duration="2000">
-            <p>My list of skills that are knowledgably and capable to apply on the project.</p>
+        <div class="title-desc">
+            <p data-aos="fade-right">My list of skills that are knowledgably and capable to apply on the project.</p>
         </div>
     </div>
 
@@ -606,7 +596,6 @@ data-aos-duration="800">
         © Santander Francis Beam 2022
     </div>
 </footer>
-
 
 <script src="/assets/js/app.js"></script>
 <script src="/assets/js/aos.js"></script>
