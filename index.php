@@ -71,11 +71,6 @@
 <div class="right-content" data-aos="fade-left"></div>
 
 </div>
-
-
-    <!-- <svg class="design1" width="41" height="53" viewBox="0 0 41 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M2.19751 7.80943C-0.661361 15.6004 7.14834 19.5304 12.5983 20.5062C16.7791 21.249 19.8664 22.8599 21.7553 27.6574C22.4641 29.8726 23.2884 32.046 24.2233 34.1648C25.0289 35.7563 26.1419 37.1279 27.4654 38.1598C29.579 39.7441 36.1605 39.9874 36.2644 43.9753C36.2943 44.5132 36.5038 45.0346 36.8482 45.428C37.1926 45.8213 37.6446 46.0556 38.1079 46.081C38.5712 46.1064 39.0092 45.9208 39.3282 45.5638C39.6473 45.2068 39.8223 44.7065 39.8159 44.1698C39.8125 42.5897 39.3564 41.0102 38.519 39.6781C37.6816 38.346 36.51 37.3366 35.1875 36.8075C33.2171 35.758 30.8661 35.9586 29.0413 34.5824C26.1855 32.4802 25.7148 28.0196 24.403 24.9306C23.334 21.9924 21.4264 19.5042 19.0233 17.9134C16.3107 16.3458 2.99369 16.188 5.27661 9.84133C6.23964 7.57647 3.12198 5.40065 2.19489 7.79967L2.19751 7.80943Z" fill="#5222D0"/>
-        </svg> -->
 </section>
 </div>
 
@@ -492,7 +487,7 @@ data-aos-duration="800">
         <p>I help people to build amazing frontend with little bit of backend for important functionalities and love to design own product for their website so that they can improve and achieve the strategic approach for their business.</p>
         <br>
 
-        <p>I am looking forward to give services that I can do and apply my skills for the project.</p>
+        <p>I am looking forward to give services and apply my skills for the project.</p>
     </div>
   </div>
 </section>
@@ -571,8 +566,8 @@ data-aos-duration="800">
 
         <!-- Linkin -->
         <div class="social-logo">
-            <i class="fa-brands fa-linkedin"></i>                       
-               francisbeamilinked
+            <i class="fa-brands fa-linkedin"></i>    
+            www.linkedin.com/in/francebeam                
         </div>
     </div>
 </div>
@@ -593,12 +588,13 @@ data-aos-duration="800">
       </ul>
    
     <div class="credits">
-        © Santander Francis Beam 2022
+        © Francis Beam Santander <span class="year"></span>
     </div>
 </footer>
 
 <script src="/assets/js/app.js"></script>
 <script src="/assets/js/aos.js"></script>
+<script src="/assets/js/year.js"></script>
 <script>
     AOS.init();
 </script>

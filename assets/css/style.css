@@ -715,6 +715,9 @@ footer.footer-section div.credits {
     background: #ffffff;
     list-style: none;
   }
+  nav ul.nav-li li a {
+    color: #393d44;
+  }
   nav label.navbar-toggler span {
     display: none;
   }
@@ -722,7 +725,33 @@ footer.footer-section div.credits {
     background: none;
   }
   nav li:hover a {
-    color: #EC615b;
+    transition: 0.3s;
+    position: relative;
+    text-decoration: none;
+  }
+  nav li:hover a:after {
+    content: "";
+    position: absolute;
+    background: #5222D0;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+  }
+  nav li:hover a:hover:after {
+    width: 100%;
+  }
+  nav li:hover a:hover {
+    color: #000000;
+  }
+  nav li#downloadcv {
+    content: none;
+    background: none;
+  }
+  nav li#downloadcv a::after {
+    content: none;
+    background: none;
   }
 }
 @media only screen and (min-width: 978px) {
@@ -827,10 +856,6 @@ footer.footer-section div.credits {
   }
   nav.nav ul.nav-li li {
     font-size: 18px;
-  }
-  nav.nav li:hover a {
-    transition: 1s;
-    color: #EC615b;
   }
   section.hero-section {
     padding: 9em 6em;

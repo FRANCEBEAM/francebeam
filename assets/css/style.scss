@@ -990,7 +990,6 @@ footer.footer-section{
 @media only screen and (min-width: 866px){
     nav{
         background: #ffffff;
-
         ul.nav-li{
             position: fixed;
             transform: none;
@@ -1009,6 +1008,9 @@ footer.footer-section{
                 margin: auto 0;
                 background: #ffffff;
                 list-style: none;
+                a{
+                    color: #393d44;
+                }
             }
         }
 
@@ -1018,11 +1020,38 @@ footer.footer-section{
 
         li:hover{
             background: none;
-            a{
-            color: $orange;
+            a{ 
+            transition: 0.3s;
+            position: relative;
+            text-decoration: none;
             }
-           
+            a:after{
+                content: "";
+                position: absolute;
+                background: #5222D0;
+                height: 3px;
+                width: 0;
+                left: 0;
+                bottom: -10px;
+                transition: 0.3s;
+            }
+            a:hover:after{
+                width: 100%;
+            }
+            a:hover{
+                color: #000000;
+               
+            }
         }
+        li#downloadcv{
+            content: none;
+            background: none;
+            a::after{
+            content: none;
+            background: none;
+            }
+         }
+
     }
 }
 
@@ -1184,12 +1213,7 @@ footer.footer-section{
                 font-size: 18px;
             }
         }
-        li:hover{
-           a{
-            transition: 1s;
-            color: $orange;
-           }
-        }
+
     }
 
 
